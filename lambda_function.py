@@ -6,7 +6,8 @@ from io import StringIO
 # Initialize AWS services
 s3_client = boto3.client("s3")
 dynamodb = boto3.resource("dynamodb")
-table = dynamodb.Table(" lambda-project-table")  # DynamoDB table name
+table = dynamodb.Table("lambda-project-table
+")  # DynamoDB table name
 
 def lambda_handler(event, context):
     print("Received event:", event)
